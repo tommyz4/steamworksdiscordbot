@@ -1,4 +1,4 @@
-# 🛠 Discord Steam Workshop Tracker Bot
+# 🛠 Discord Steam Tracker Bot
 
 This bot is built using **discord.py** (`discord.ext.commands`) and helps Discord communities track and get alerts for:
 
@@ -83,12 +83,25 @@ Alerts are sent to configured channels when updates are detected.
 
 ## 🔐 Requirements
 
-- Add your Steam API key in the script (`STEAM_API_KEY`)
-- Add your Discord bot token at the bottom in `bot.run("<TOKEN>")`
+1. Install dependencies:
+```bash
+pip install discord.py aiohttp python-dotenv
+```
+
+2. Create a `.env` file in your project directory with the following content:
+
+```env
+STEAM_API_KEY=your_steam_api_key_here
+DISCORD_BOT_TOKEN=your_discord_bot_token_here
+```
+
+3. Run the bot:
+```bash
+python steam_tracker_bot_full_env.py
+```
 
 ---
 
 ## ⚡ Summary
 
 This bot is ideal for communities running survival or mod-heavy games like DayZ or Arma. It keeps users informed of mod/game updates and can analyze player Steam profiles.
-

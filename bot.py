@@ -86,9 +86,6 @@ async def check_steam_mod_updates():
                                 data[guild_id][channel_id]["steam_mods"] = mod_list
                                 save_data(data)
 
-async def check_reforger_mod_updates():
-    pass
-
 async def check_game_updates():
     async with aiohttp.ClientSession() as session:
         for guild_id, channels in data.items():
@@ -128,8 +125,7 @@ async def check_game_updates():
 @tasks.loop(minutes=5)
 async def update_task():
     await check_steam_mod_updates()
-    await check_reforger_mod_updates()
-    await check_game_updates()
+        await check_game_updates()
 
 @bot.event
 async def on_ready():

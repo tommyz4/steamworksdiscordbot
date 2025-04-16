@@ -1,0 +1,9 @@
+{
+    "guild_id": {
+      "channel_id": {
+        "steam_mods": [{"id": "123", "name": "ModName", "last_update": 1710000000}],
+        "reforger_mods": [{"id": "mod-uuid", "name": "ReforgerMod"}],
+        "games": [{"id": "730", "name": "CS:GO", "last_update": 1710000000}]
+      }
+    }
+  }

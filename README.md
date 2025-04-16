@@ -97,7 +97,7 @@ DISCORD_BOT_TOKEN=your_discord_bot_token_here
 
 3. Run the bot:
 ```bash
-python steam_tracker_bot_full_env.py
+python bot.py
 ```
 
 ---
